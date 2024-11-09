@@ -1,6 +1,6 @@
 # This configuration creates one ADS instance, which can be used to create multiple "child" instances.
 # This is a good choice if you want to run multiple game servers, even of different types.
-version: "3"
+
 services:
   amp:
     image: mitchtalmadge/amp-dockerized:latest
