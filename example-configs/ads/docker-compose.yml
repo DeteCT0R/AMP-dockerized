@@ -3,9 +3,8 @@
 version: "3"
 services:
   amp:
-    container_name: amp
     image: mitchtalmadge/amp-dockerized:latest
-    mac_address: 02:42:AC:XX:XX:XX # Please see the README about this field.
+    mac_address: 02:42:AC:69:1A:63 # Please see the README about this field.
     ports:
       - 8080:8080
       - 25565:25565 # Example port for Minecraft Java server.
