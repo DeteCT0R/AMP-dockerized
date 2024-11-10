@@ -13,6 +13,6 @@ services:
       - "UID=1000" # Change according to which user on the host will own the ampdata volume.
       - "GID=1000"
       - "TZ=Europe/Budapest" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-      - "LICENCE="
+      - "LICENCE=${AMP_LICENCE}"
       - "MODULE=ADS"
     restart: unless-stopped
