@@ -10,9 +10,9 @@ services:
     volumes:
       - ./ampdata:/home/amp/.ampdata
     environment:
-      - "UID=${UID}" # Change according to which user on the host will own the ampdata volume.
-      - "GID=${GID}"
-      - "TZ=${TZ}" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-      - "LICENCE=${LICENCE}"
+      - "UID=1000" # Change according to which user on the host will own the ampdata volume.
+      - "GID=1000"
+      - "TZ=Europe/Budapest" # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+      - "LICENCE="
       - "MODULE=ADS"
     restart: unless-stopped
